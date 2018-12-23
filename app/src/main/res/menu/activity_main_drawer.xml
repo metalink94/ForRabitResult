@@ -5,21 +5,49 @@
 
     <group android:checkableBehavior="single">
         <item
-                android:id="@+id/nav_camera"
-                android:icon="@drawable/ic_menu_camera"
-                android:title="Import"/>
+                android:id="@+id/nav_cricket"
+                android:icon="@drawable/ic_cricket"
+                android:title="Cricket"/>
         <item
-                android:id="@+id/nav_gallery"
-                android:icon="@drawable/ic_menu_gallery"
-                android:title="Gallery"/>
+                android:id="@+id/nav_soccer"
+                android:icon="@drawable/ic_soccer"
+                android:title="Soccer"/>
         <item
-                android:id="@+id/nav_slideshow"
-                android:icon="@drawable/ic_menu_slideshow"
-                android:title="Slideshow"/>
+                android:id="@+id/nav_formula"
+                android:icon="@drawable/ic_formula"
+                android:title="Formula 1"/>
         <item
-                android:id="@+id/nav_manage"
+                android:id="@+id/nav_racing"
+                android:icon="@drawable/ic_racing"
+                android:title="Auto Racing"/>
+        <item
+                android:id="@+id/nav_tennis"
+                android:icon="@drawable/ic_tennis"
+                android:title="Tennis"/>
+        <item
+                android:id="@+id/nav_bandy"
                 android:icon="@drawable/ic_menu_manage"
-                android:title="Tools"/>
+                android:title="Bandy"/>
+        <item
+                android:id="@+id/nav_baseball"
+                android:icon="@drawable/ic_baseball"
+                android:title="Baseball"/>
+        <item
+                android:id="@+id/nav_basketball"
+                android:icon="@drawable/ic_basketball"
+                android:title="Basketball"/>
+        <item
+                android:id="@+id/nav_football"
+                android:icon="@drawable/ic_am_football"
+                android:title="American Football"/>
+        <item
+                android:id="@+id/nav_boxing"
+                android:icon="@drawable/ic_boxing"
+                android:title="Boxing"/>
+        <item
+                android:id="@+id/nav_biathlon"
+                android:icon="@drawable/ic_biathlon"
+                android:title="Biathlon"/>
     </group>
 
     <item android:title="Communicate">

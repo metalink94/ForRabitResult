@@ -13,6 +13,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.content_main.*
 import ru.lapov.forrabitresult.R
+import ru.lapov.forrabitresult.fragments.LoadingDialog
 import ru.lapov.forrabitresult.listadapter.ListAdapterImpl
 import ru.lapov.forrabitresult.listadapter.ListBuilder
 import ru.lapov.forrabitresult.listadapter.ListBuilderImpl
@@ -54,7 +55,9 @@ class MainActivity : AppCompatActivity(),
         adapter.addItem(DividerItemModel(getString(R.string.soccer_israel)))
         adapter.addItem(
             RowItemModel(
-                "92'", "", "1:2 (0:0)",
+                "92'", "Rennais\n" +
+                        "Nimes\n" +
+                        "Draw", "1:2 (0:0)",
                 "-/-", "-/-", "-/-", "+0"
             )
         )
@@ -147,28 +150,21 @@ class MainActivity : AppCompatActivity(),
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
-            R.id.nav_camera -> {
-                // Handle the camera action
-            }
-            R.id.nav_gallery -> {
-
-            }
-            R.id.nav_slideshow -> {
-
-            }
-            R.id.nav_manage -> {
-
-            }
-            R.id.nav_share -> {
-
-            }
-            R.id.nav_send -> {
-
+            R.id.nav_cricket, R.id.nav_bandy, R.id.nav_baseball,
+                R.id.nav_basketball, R.id.nav_biathlon, R.id.nav_boxing,
+                R.id.nav_football, R.id.nav_formula, R.id.nav_racing,
+                R.id.nav_soccer, R.id.nav_tennis -> {
+                showProgressDialog()
             }
         }
 
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
+    }
+
+    private fun showProgressDialog() {
+        supportFragmentManager.beginTransaction()
+            .add(LoadingDialog(), "").commitAllowingStateLoss()
     }
 
     override fun onClick(view: View) {

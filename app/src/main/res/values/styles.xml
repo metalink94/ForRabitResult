@@ -15,6 +15,7 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name = "android:windowActionBar">false</item>
         <item name = "android:windowNoTitle">true</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
     </style>
 
     <!-- Кастомная AppTheme.Launcher. Устанавливает в качестве фона вашу drawable -->

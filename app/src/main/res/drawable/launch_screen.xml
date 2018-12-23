@@ -4,13 +4,13 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:opacity="opaque">
 
     <!-- Цвет фона, предпочтительно как в главной теме -->
-    <item android:drawable="@android:color/white"/>
+    <item android:drawable="@color/row_color"/>
 
     <!-- Лого приложения - 144dp версия иконки приложения -->
     <item>
 
         <bitmap
-                android:src="@mipmap/ic_launcher"
+                android:src="@drawable/icon"
                 android:gravity="center"/>
 
     </item>

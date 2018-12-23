@@ -1,5 +1,7 @@
 package ru.lapov.forrabitresult.adapter
 
+import android.support.v7.widget.RecyclerView
+
 interface AdapterAction<in M, in H : RecyclerView.ViewHolder> {
     fun bind(model: M, viewHolder: H)
 }
