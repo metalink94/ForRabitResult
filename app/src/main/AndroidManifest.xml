@@ -7,7 +7,7 @@
             android:icon="@drawable/icon_main"
             android:label="@string/app_name"
             android:supportsRtl="true"
-            android:theme="@style/AppTheme.NoActionBar"
+            android:theme="@style/NoActionBar"
             android:name=".FourRabitApp">
         <activity
                 android:name=".activities.MainActivity"
